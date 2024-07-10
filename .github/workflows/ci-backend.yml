@@ -1,8 +1,14 @@
 name: Primeiro workflow
-
 on:
   push:
-
 jobs:
   primeiro-job:
-    
+    runs-on: ubunto-latest
+    steps:
+      - run: echo "primeiro passo"
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: Lista arquivos
+        run: ls ${{ github.workspace }}
+      - name: 
+        run: echo "Status ${{ job.status }}"

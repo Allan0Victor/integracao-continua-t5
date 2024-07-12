@@ -60,6 +60,7 @@ public class Atendimento implements Serializable {
 
     public void setData(LocalDate data) {
         this.data = data;
+        //teste
     }
 
     public LocalTime getHora() {

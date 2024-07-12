@@ -57,6 +57,7 @@ public class AtendimentoController implements IController<Atendimento> {
     public ResponseEntity<Atendimento> insert(@RequestBody Atendimento objeto) {
         Atendimento registro = servico.save(objeto);
         return ResponseEntity.status(HttpStatus.CREATED).body(registro);
+        //teste
     }
 
     @Override
